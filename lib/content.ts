@@ -40,31 +40,34 @@ export const services = [
 
 export const projects = [
   {
-    title: "Maison Sillage",
-    type: "Site éditorial",
+    title: "École d'Ikebana Ohara",
+    type: "Site vitrine",
     description:
-      "Une présence de marque immersive, pensée pour raconter un savoir-faire et générer des demandes qualifiées.",
-    tags: ["Next.js", "Direction artistique", "SEO"],
-    href: "https://example.com",
+      "Une vitrine élégante alliée à une stratégie SEO performante pour maximiser la visibilité en ligne et booster les inscriptions aux ateliers.",
+    tags: ["Essentiel", "Art floral", "SEO locale", "Conversion"],
+    href: "https://ohara-chapitre-yvelines-paris.fr/",
+    image: "/projects/illustration-ikebana-ohara-paris.webp",
     imagePosition: "center",
   },
   {
-    title: "Cabinet Lumen",
-    type: "Acquisition locale",
+    title: "Kawaii Shiba - Mameshiba",
+    type: "Site web complet",
     description:
-      "Une vitrine claire et rassurante qui transforme une expertise complexe en parcours de contact fluide.",
-    tags: ["Contenu", "SEO local", "Performance"],
-    href: "https://example.com",
-    imagePosition: "left",
+      "Plateforme dédiée à l'élevage de Mameshiba. Intervention critique pour réhabiliter un domaine banni par Google, assainir la sécurité et déployer une stratégie d'acquisition à l'échelle européenne.",
+    tags: ["Évolutif", "Élevage", "SEO France & Europe", "Réhabilitation de domaine banni"],
+    image: "/projects/illustration-kawaii-shiba-mameshiba.webp",
+    href: "https://www.kawaii-shiba.com/presentation-elevage",
+    imagePosition: "center",
   },
-  {
-    title: "Atelier Nord",
-    type: "Portfolio",
+ {
+    title: "Aexis Group",
+    type: "Site Corporate",
     description:
-      "Un portfolio sobre et rapide qui laisse toute la place aux réalisations et à la prise de rendez-vous.",
-    tags: ["UX", "Accessibilité", "Analytics"],
-    href: "https://example.com",
-    imagePosition: "right",
+      "Plateforme internationale et multilingue pour l'expert en pilotage de la performance. Déploiement d'une stratégie d'acquisition de très haut niveau garantissant une position de leader incontesté sur les solutions IBM Planning Analytics.",
+    tags: ["Clé en main","Multilingue", "Corporate B2B", "SEO Top Ranking", "IBM Planning Analytics"],
+    image: "/projects/illustration-aexis-group.webp",
+    href: "https://aexis.fr/services/software-sales",
+    imagePosition: "center",
   },
 ] as const;
 

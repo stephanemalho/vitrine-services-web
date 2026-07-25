@@ -23,7 +23,7 @@ export function ProjectsSection() {
           <SectionHeading
             eyebrow="02 · Projets"
             title="Des expériences numériques sobres, mémorables et orientées résultat."
-            description="Ces aperçus de démonstration seront remplacés par vos réalisations, leurs résultats et leurs URL avant la mise en ligne."
+            description="Une sélection de réalisations pensées pour conjuguer identité, visibilité et efficacité, amenée à s’enrichir au fil des collaborations."
             inverted
           />
         </Reveal>
@@ -36,16 +36,16 @@ export function ProjectsSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block h-full bg-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
-                aria-label={`${project.title}, projet de démonstration (nouvel onglet)`}
+                aria-label={`Voir ${project.title} (nouvel onglet)`}
               >
                 <article className="flex h-full flex-col">
                   <div className="relative aspect-[4/3] overflow-hidden bg-black">
                     <Image
-                      src="/images/portfolio-studio.webp"
+                      src={project.image}
                       alt=""
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
-                      className={`object-cover opacity-75 transition duration-700 group-hover:scale-[1.03] group-hover:opacity-100 ${imagePosition[project.imagePosition]}`}
+                      className={`object-cover opacity-95 transition duration-700 group-hover:scale-[1.03] group-hover:opacity-100 ${imagePosition[project.imagePosition]}`}
                     />
                     <div className="absolute inset-0 border border-white/10" />
                     <p className="absolute top-4 left-4 bg-foreground px-3 py-2 font-mono text-[0.65rem] tracking-[0.13em] text-white/60 uppercase">

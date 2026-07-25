@@ -24,9 +24,10 @@ describe("site content", () => {
     expect(pricingOffers.filter((offer) => offer.featured)).toHaveLength(1);
   });
 
-  it("keeps project placeholders on secure external URLs", () => {
+  it("keeps project links secure and project images local", () => {
     expect(projects.every((project) => project.href.startsWith("https://"))).toBe(
       true,
     );
+    expect(projects.every((project) => project.image.startsWith("/"))).toBe(true);
   });
 });
