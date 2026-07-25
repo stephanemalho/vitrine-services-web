@@ -20,21 +20,21 @@ export const services = [
     icon: "search" as ServiceIcon,
     title: "SEO & référencement",
     description:
-      "Une structure et des contenus pensés pour gagner en visibilité dans les résultats de recherche.",
+      "Une structure et des contenus pensés pour gagner en visibilité. Nous optimisons vos métadonnées et analysons vos performances pour attirer un trafic ciblé.",
   },
   {
     number: "03",
     icon: "shield" as ServiceIcon,
     title: "Analyse & sécurité",
     description:
-      "Un suivi clair des performances, du trafic et des fondamentaux de sécurité de votre domaine.",
+      "Un suivi proactif de vos performances et de votre trafic. Nous sécurisons votre infrastructure grâce à des audits réguliers, au chiffrement rigoureux de vos données sensibles et à une protection continue contre les nouvelles vulnérabilités web.",
   },
   {
     number: "04",
     icon: "refresh" as ServiceIcon,
     title: "Maintenance & évolution",
     description:
-      "Des mises à jour techniques et éditoriales pour garder un site fiable, rapide et pertinent.",
+      "Des mises à jour techniques régulières pour garantir une plateforme fiable et ultra-rapide au quotidien. Nous accompagnons votre croissance en développant de nouvelles fonctionnalités sur mesure, en optimisant votre architecture globale, et en intégrant les derniers standards technologiques et outils d'assistance pour pérenniser durablement votre activité.",
   },
 ] as const;
 

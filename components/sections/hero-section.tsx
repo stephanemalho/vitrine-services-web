@@ -22,7 +22,7 @@ export function HeroSection() {
           <div className="pb-6 lg:pb-12">
             <p className="mb-7 flex items-center gap-3 font-mono text-xs tracking-[0.17em] text-white/55 uppercase">
               <span className="size-2 bg-accent" aria-hidden="true" />
-              Studio web indépendant · France
+              Studio web indépendant · Paris · France
             </p>
             <h1 className="max-w-5xl text-[clamp(3.4rem,7.8vw,7.4rem)] leading-[0.89] font-medium tracking-[-0.065em] text-balance">
               Une présence en ligne qui{" "}

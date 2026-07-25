@@ -1,16 +1,9 @@
 {
   "permissions": {
-    "allow": [
-      "Read(//Users/stephanemalho/dev/templates/multi-harness-agent-template/scripts/**)",
-      "Bash(/Users/stephanemalho/dev/templates/multi-harness-agent-template/scripts/init-agent-template.sh /Users/stephanemalho/dev/personal/vitrine-services-web --no-prompt)",
-      "Bash(echo \"=== .claude/settings.json LOCAL \\(existant\\) ===\"; cat /Users/stephanemalho/dev/personal/vitrine-services-web/.claude/settings.json; echo; echo \"=== .claude/settings.json TEMPLATE ===\"; cat /Users/stephanemalho/dev/templates/multi-harness-agent-template/.claude/settings.json)",
-      "Read(//Users/stephanemalho/dev/templates/multi-harness-agent-template/.claude/**)",
-      "Bash(cp /Users/stephanemalho/dev/templates/multi-harness-agent-template/.claude/settings.json /Users/stephanemalho/dev/personal/vitrine-services-web/.claude/settings.json && echo \"=== settings.json final ===\"; cat /Users/stephanemalho/dev/personal/vitrine-services-web/.claude/settings.json)",
-      "Bash(./scripts/validate-agent-template.sh)",
-      "Bash(echo \"--- exit: $? ---\")"
-    ],
-    "additionalDirectories": [
-      "/Users/stephanemalho/dev/templates/multi-harness-agent-template/.claude"
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
     ]
   }
 }
