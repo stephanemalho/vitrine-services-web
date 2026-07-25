@@ -13,7 +13,7 @@ export const siteConfig = {
     "http://localhost:3000",
   bookingUrl: process.env.NEXT_PUBLIC_BOOKING_URL ?? "#contact",
   contactEmail:
-    process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "bonjour@votre-domaine.fr",
+    process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "infos@studio-seo.fr",
   legal: {
     name: process.env.NEXT_PUBLIC_LEGAL_NAME ?? "À compléter",
     address: process.env.NEXT_PUBLIC_LEGAL_ADDRESS ?? "À compléter",
