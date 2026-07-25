@@ -1,37 +1,30 @@
-# Business Rules Template
-
-Use this file for project-specific product and domain rules.
+# Business And Content Rules
 
 ## Domain Vocabulary
 
-| Term | Meaning | Source |
-|---|---|---|
-| `TERM_REPLACE_ME` | `MEANING_REPLACE_ME` | `SOURCE_REPLACE_ME` |
+| Term | Meaning |
+|---|---|
+| booking URL | Public Google Form URL used by every appointment call to action |
+| project card | Portfolio entry with image, summary, tags, and an external URL |
+| offer | One of the Essentiel, Évolutif, or Clé en main pricing packages |
 
 ## Invariants
 
-- `INVARIANT_REPLACE_ME`
-- `INVARIANT_REPLACE_ME`
+- All booking calls to action use the single URL defined by `NEXT_PUBLIC_BOOKING_URL`.
+- The home navigation anchors remain `services`, `projets`, `tarifs`, and `contact`.
+- The Évolutif offer is the only visually featured pricing offer.
+- Demo project names and `example.com` links must not be represented as real client work.
+- Legal identity placeholders must be completed and reviewed before production.
 
-## Workflows
+## Copy And UX
 
-### Workflow Name
+- Primary locale: French (France).
+- Use plain professional language and explain technical value in client terms.
+- Do not claim performance, rankings, client outcomes, or certifications without evidence.
+- Interactive controls must have visible focus states, keyboard access, and descriptive labels.
+- Respect `prefers-reduced-motion`.
 
-1. Trigger:
-2. Preconditions:
-3. Steps:
-4. Success state:
-5. Failure handling:
+## Approval
 
-## Copy And UX Rules
-
-- Preferred wording:
-- Forbidden wording:
-- Locale/language:
-- Accessibility expectations:
-
-## Approval Rules
-
-- Changes requiring human approval:
-- Changes agents may make directly:
-
+- Human approval is required before publishing real client names, logos, testimonials, analytics, legal identity, prices that differ from the approved offer, or production form URLs.
+- Agents may refine implementation copy without changing prices, scope, or legal meaning.

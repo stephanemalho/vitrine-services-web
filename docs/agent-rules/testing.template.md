@@ -1,40 +1,35 @@
-# Testing Rules Template
+# Testing Rules
 
-Use this file for testing expectations shared by every harness.
-
-## Test Commands
+## Commands
 
 ```bash
 # Unit
-COMMAND_REPLACE_ME
+npm run test
 
-# Integration
-COMMAND_REPLACE_ME
+# Types
+npm run typecheck
 
-# E2E
-COMMAND_REPLACE_ME
+# Lint
+npm run lint
+
+# Production rendering
+npm run build
 ```
 
-## Test Policy
+## Policy
 
 - Do not delete or weaken tests to make a task pass.
-- Do not skip failing tests unless the user explicitly approves and the reason is documented.
-- New behavior should include focused test coverage.
-- Bug fixes should include a regression test when practical.
+- Add focused unit coverage when static content gains a new invariant.
+- Validate interactive or responsive changes in a real browser at mobile and desktop sizes.
+- A production build is required before reporting an implementation complete.
+- Browser-only checks supplement deterministic commands; they do not replace them.
 
-## Fixtures
+## Network
 
-- Fixture location:
-- Mocking policy:
-- Network policy:
-- Database policy:
+- Unit tests must not call external services.
+- Builds must succeed without a configured Google Form or production domain.
+- Do not exercise a live booking form during automated validation.
 
 ## Reporting
 
-When reporting completion, include:
-
-- exact command
-- pass/fail status
-- important failures
-- skipped checks and why
-
+Report exact commands as passed, failed, skipped, or unavailable. Do not present an unavailable hosted check as passed.

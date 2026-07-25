@@ -1,29 +1,13 @@
-# Data Model Rules Template
+# Data Model Rules
 
-Use this file for schema, persistence, migrations, and data contracts.
+The site has no database, API, schema, migration, or persistent user data.
 
-## Data Ownership
+## Static Data
 
-| Entity | Owner | Source of truth |
-|---|---|---|
-| `ENTITY_REPLACE_ME` | `OWNER_REPLACE_ME` | `SOURCE_REPLACE_ME` |
+- Editorial collections live in `lib/content.ts`.
+- Public environment-derived configuration lives in `lib/site-config.ts`.
+- Keep collection shapes explicit and covered by focused invariants where practical.
 
-## Migration Rules
+## Future Persistence
 
-- Never edit applied migrations unless explicitly approved.
-- Add forward-only migrations when the framework supports them.
-- Include rollback notes when rollback is manual.
-- Validate migrations against a clean database and an upgraded database when practical.
-
-## API/Data Contracts
-
-- Contract files:
-- Generated types:
-- Compatibility policy:
-
-## Test Data
-
-- Fixtures location:
-- Seed command:
-- Data that must not be used in tests:
-
+Adding a database, CMS, form handler, or analytics store is an architecture and privacy change. It requires explicit approval plus updates to security, legal copy, tests, and operations documentation.

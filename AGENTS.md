@@ -6,12 +6,12 @@ Keep it short, current, and practical. Put detailed project knowledge in `docs/a
 
 ## Project Identity
 
-- Project name: `PROJECT_NAME_REPLACE_ME`
-- Project type: `PROJECT_TYPE_REPLACE_ME`
-- Primary stack: `STACK_REPLACE_ME`
-- Runtime/package manager: `RUNTIME_REPLACE_ME`
+- Project name: `vitrine-services-web`
+- Project type: `Static marketing website`
+- Primary stack: `Next.js 16 App Router, React 19, TypeScript, Tailwind CSS 4, shadcn/ui with Base UI`
+- Runtime/package manager: `Node.js 24.18.0 / npm 11`
 - Main branch: `main`
-- Human maintainer: `OWNER_REPLACE_ME`
+- Human maintainer: `@stephanemalho`
 
 ## Source Of Truth
 
@@ -100,9 +100,10 @@ scripts/validate-agent-template.sh
 scripts/agent-preflight.sh
 
 # Project-specific checks
-PROJECT_LINT_COMMAND_REPLACE_ME
-PROJECT_TEST_COMMAND_REPLACE_ME
-PROJECT_BUILD_COMMAND_REPLACE_ME
+npm run lint
+npm run test
+npm run typecheck
+npm run build
 ```
 
 If a command is unavailable, report why. Do not claim validation passed without exact command output.
