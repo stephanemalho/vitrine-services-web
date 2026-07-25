@@ -39,16 +39,21 @@ export function ProjectsSection() {
                 aria-label={`Voir ${project.title} (nouvel onglet)`}
               >
                 <article className="flex h-full flex-col">
-                  <div className="relative aspect-[4/3] overflow-hidden bg-black">
+                  <div className="relative aspect-4/3 overflow-hidden bg-black">
                     <Image
                       src={project.image}
                       alt=""
                       fill
+                      loading={index === 0 ? "eager" : "lazy"}
                       sizes="(max-width: 1024px) 100vw, 33vw"
                       className={`object-cover opacity-95 transition duration-700 group-hover:scale-[1.03] group-hover:opacity-100 ${imagePosition[project.imagePosition]}`}
                     />
+                    <div
+                      className="pointer-events-none absolute inset-0 bg-black/62 transition-colors duration-500 group-hover:bg-black/[0.14]"
+                      aria-hidden="true"
+                    />
                     <div className="absolute inset-0 border border-white/10" />
-                    <p className="absolute top-4 left-4 bg-foreground px-3 py-2 font-mono text-[0.65rem] tracking-[0.13em] text-white/60 uppercase">
+                    <p className="absolute top-4 left-4 bg-foreground px-3 py-2 font-mono text-[0.65rem] tracking-[0.13em] text-white/60 uppercase transition-colors duration-300 group-hover:text-white">
                       {project.type}
                     </p>
                   </div>
@@ -62,7 +67,7 @@ export function ProjectsSection() {
                         aria-hidden="true"
                       />
                     </div>
-                    <p className="mt-4 flex-1 text-sm leading-6 text-white/55">
+                    <p className="mt-4 flex-1 text-sm leading-6 text-white/55 transition-colors duration-300 group-hover:text-white">
                       {project.description}
                     </p>
                     <div className="mt-7 flex flex-wrap gap-2">
@@ -70,7 +75,7 @@ export function ProjectsSection() {
                         <Badge
                           key={tag}
                           variant="outline"
-                          className="rounded-none border-white/20 bg-transparent font-normal text-white/65"
+                          className="rounded-none border-white/20 bg-transparent font-normal text-white/65 transition-colors duration-300 group-hover:border-white/40 group-hover:text-white"
                         >
                           {tag}
                         </Badge>

@@ -49,7 +49,7 @@ export function HeroSection() {
           </div>
 
           <div className="pb-6 lg:pb-12">
-            <div className="relative aspect-[4/3] overflow-hidden border border-white/20 bg-black">
+            <div className="relative aspect-4/3 overflow-hidden border border-white/20 bg-black">
               <Image
                 src="/images/portfolio-studio.webp"
                 alt="Studio sombre avec un ordinateur présentant une interface web et des indicateurs de performance"

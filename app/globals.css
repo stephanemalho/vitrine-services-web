@@ -23,12 +23,15 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-sans:
+    var(--font-geist-sans), "Geist Fallback", ui-sans-serif, system-ui,
+    sans-serif;
   --font-mono:
-    "Geist Mono", "Geist Mono Fallback", ui-monospace, SFMono-Regular,
-    monospace;
+    var(--font-geist-mono), "Geist Mono Fallback", ui-monospace,
+    SFMono-Regular, monospace;
   --font-heading:
-    "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+    var(--font-geist-sans), "Geist Fallback", ui-sans-serif, system-ui,
+    sans-serif;
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
