@@ -49,7 +49,7 @@ export function ProjectsSection() {
                       className={`object-cover opacity-95 transition duration-700 group-hover:scale-[1.03] group-hover:opacity-100 ${imagePosition[project.imagePosition]}`}
                     />
                     <div
-                      className="pointer-events-none absolute inset-0 bg-black/62 transition-colors duration-500 group-hover:bg-black/[0.14]"
+                      className="pointer-events-none absolute inset-0 bg-black/42 transition-colors duration-500 group-hover:bg-black/[0.14]"
                       aria-hidden="true"
                     />
                     <div className="absolute inset-0 border border-white/10" />
