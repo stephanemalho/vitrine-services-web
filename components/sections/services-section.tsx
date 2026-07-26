@@ -91,7 +91,7 @@ export function ServicesSection() {
           <SectionHeading
             eyebrow="01 · Services"
             title="Des expertises réunies pour faire de votre site un outil de croissance."
-            description="Un accompagnement de bout en bout, avec un interlocuteur unique et des choix techniques expliqués simplement."
+            description="Studio S. vous propose un accompagnement de bout en bout, grantissant un interlocuteur unique et des choix techniques expliqués simplement. Chaque projet est pensé pour être évolutif, sécurisé et optimisé pour le référencement naturel."
           />
         </Reveal>
 
@@ -110,7 +110,7 @@ export function ServicesSection() {
                     <Icon className="size-5" strokeWidth={1.5} aria-hidden="true" />
                   </CardHeader>
                   <CardContent className="relative z-10 flex flex-1 flex-col justify-end px-6 pt-24 pb-7 sm:pt-28">
-                    <h3 className="text-xl leading-tight font-medium tracking-[-0.025em]">
+                    <h3 className="text-xl leading-tight font-medium tracking-tight">
                       {service.title}
                     </h3>
                     <p className="mt-4 text-sm leading-6 text-muted-foreground">

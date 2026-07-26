@@ -20,21 +20,21 @@ export const services = [
     icon: "search" as ServiceIcon,
     title: "SEO & référencement",
     description:
-      "Une structure et des contenus pensés pour gagner en visibilité. Nous optimisons vos métadonnées et analysons vos performances pour attirer un trafic ciblé.",
+      "Une structure et des contenus pensés pour gagner en visibilité. Optimisez vos métadonnées et analysez vos performances pour attirer un trafic ciblé.",
   },
   {
     number: "03",
     icon: "shield" as ServiceIcon,
     title: "Analyse & sécurité",
     description:
-      "Un suivi proactif de vos performances et de votre trafic. Nous sécurisons votre infrastructure grâce à des audits réguliers, au chiffrement rigoureux de vos données sensibles et à une protection continue contre les nouvelles vulnérabilités web.",
+      "Un suivi proactif de vos performances et de votre trafic. Sécurisez votre infrastructure grâce à des audits réguliers, au chiffrement rigoureux de vos données sensibles et à une protection continue contre les nouvelles vulnérabilités web.",
   },
   {
     number: "04",
     icon: "refresh" as ServiceIcon,
     title: "Maintenance & évolution",
     description:
-      "Des mises à jour techniques régulières pour garantir une plateforme fiable et ultra-rapide au quotidien. Nous accompagnons votre croissance en développant de nouvelles fonctionnalités sur mesure, en optimisant votre architecture globale, et en intégrant les derniers standards technologiques et outils d'assistance pour pérenniser durablement votre activité.",
+      "Des mises à jour techniques régulières pour garantir une plateforme fiable et ultra-rapide au quotidien. Accompagnez votre croissance en développant de nouvelles fonctionnalités sur mesure, en optimisant votre architecture globale, et en intégrant les derniers standards technologiques et outils d'assistance pour pérenniser durablement votre activité.",
   },
 ] as const;
 
@@ -106,10 +106,13 @@ export const pricingOffers = [
     suffix: "HT",
     description: "Pour déléguer la stratégie, le contenu et la réalisation.",
     features: [
+      "Toute la base de l’offre Évolutif",
       "4 pages complètes + pages légales",
       "Design et rédaction professionnelle",
       "3 propositions de maquette",
       "Veille concurrentielle ciblée",
+      "Maintien et suivi SEO inclus",
+      "Maintenance offerte pendant 6 mois",
     ],
     cta: "Opter pour le Clé en main",
     featured: false,

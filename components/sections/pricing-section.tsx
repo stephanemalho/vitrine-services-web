@@ -16,7 +16,7 @@ export function PricingSection() {
           <SectionHeading
             eyebrow="03 · Tarifs"
             title="Des offres lisibles, sans surprise et adaptées à votre ambition."
-            description="Chaque projet commence par un échange gratuit pour cadrer vos objectifs, votre calendrier et le niveau d’accompagnement utile."
+            description="Chaque projet commence par un échange gratuit pour cadrer vos objectifs, votre calendrier et définir le niveau d’accompagnement qui convient le mieux en fonction de votre secteur d’activité et de votre stratégie digitale."
           />
         </Reveal>
 
@@ -43,7 +43,7 @@ export function PricingSection() {
                 </CardHeader>
                 <CardContent className="flex flex-1 flex-col px-6 py-8">
                   <div className="flex items-end gap-2">
-                    <p className="text-4xl font-medium tracking-[-0.05em]">
+                    <p className="text-4xl font-medium tracking-tighter">
                       {offer.price}
                     </p>
                     {offer.suffix ? (

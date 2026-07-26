@@ -23,7 +23,7 @@ export function ProjectsSection() {
           <SectionHeading
             eyebrow="02 · Projets"
             title="Des expériences numériques sobres, mémorables et orientées résultat."
-            description="Une sélection de réalisations pensées pour conjuguer identité, visibilité et efficacité, amenée à s’enrichir au fil des collaborations."
+            description="Voici une sélection de projets récents correspondant à des besoins variés, allant de la publication de sites vitrines à la création d'un site multilangue complexe. Un exemple est présenté pour chaque offres de service, allant de l'offre Éssentiel à l'offre Clé en main – les offres sont détaillées dans la section suivante."
             inverted
           />
         </Reveal>
@@ -49,7 +49,7 @@ export function ProjectsSection() {
                       className={`object-cover opacity-95 transition duration-700 group-hover:scale-[1.03] group-hover:opacity-100 ${imagePosition[project.imagePosition]}`}
                     />
                     <div
-                      className="pointer-events-none absolute inset-0 bg-black/62 transition-colors duration-500 group-hover:bg-black/[0.14]"
+                      className="pointer-events-none absolute inset-0 bg-black/42 transition-colors duration-500 group-hover:bg-black/[0.14]"
                       aria-hidden="true"
                     />
                     <div className="absolute inset-0 border border-white/10" />

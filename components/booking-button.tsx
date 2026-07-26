@@ -11,7 +11,7 @@ type BookingButtonProps = {
 };
 
 export function BookingButton({
-  label = "Prendre rendez-vous",
+  label = "Écrire à Studio S.",
   className,
   inverted = false,
 }: BookingButtonProps) {

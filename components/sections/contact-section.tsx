@@ -40,8 +40,8 @@ export function ContactSection() {
               Prêt à lancer votre projet&nbsp;?
             </h2>
             <p className="mt-7 max-w-2xl text-lg leading-8 opacity-70">
-              Parlons de vos objectifs et recevez un devis gratuit,
-              compréhensible et adapté à votre activité.
+              Parlons de vos objectifs et réalisons un devis gratuit et sans engagement, clair,
+              lisible et adapté à votre demande.
             </p>
             <div className="mt-9">
               <BookingButton inverted />
