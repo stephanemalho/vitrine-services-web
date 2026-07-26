@@ -56,13 +56,13 @@ export const projects = [
     description:
       "Plateforme dédiée à l'élevage de Mameshiba. Intervention critique pour réhabiliter un domaine banni par Google, assainir la sécurité et déployer une stratégie d'acquisition à l'échelle européenne.",
     tags: ["Évolutif", "Élevage", "SEO France & Europe", "Réhabilitation de domaine banni"],
-    image: "/projects/shiba-inu-mameshiba-kawaii-shiba-card.webp",
+    image: "/projects/chiots-mameshiba-de-kawaii-shiba.webp",
     imageAlt:
       "Chiot Mameshiba roux de l’élevage Kawaii Shiba allongé dans l’herbe",
     href: "https://www.kawaii-shiba.com/presentation-elevage",
     imagePosition: "center",
   },
- {
+  {
     title: "Aexis Group",
     type: "Site Corporate",
     description:
