@@ -22,13 +22,6 @@ export const metadata: Metadata = {
     template: "%s | Studio S.",
   },
   description: siteConfig.description,
-  keywords: [
-    "création site vitrine",
-    "référencement SEO",
-    "développeur freelance",
-    "site web professionnel",
-    "création site web sur mesure",
-  ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   alternates: {
@@ -60,7 +53,15 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full`}
     >
-      <body className="min-h-full antialiased">{children}</body>
+      <body id="top" className="min-h-full antialiased">
+        <a
+          href="#contenu-principal"
+          className="fixed top-3 left-3 z-100 -translate-y-24 bg-background px-4 py-3 font-semibold text-foreground shadow-lg transition-transform focus:translate-y-0"
+        >
+          Aller au contenu principal
+        </a>
+        {children}
+      </body>
     </html>
   );
 }

@@ -28,7 +28,7 @@ export default function LegalNoticePage() {
   return (
     <>
       <SiteHeader solid />
-      <main className="pt-18">
+      <main id="contenu-principal" className="pt-18">
         <article className="container-shell py-20 sm:py-28">
           <Link
             href="/"

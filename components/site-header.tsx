@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sheet";
 import { navigation } from "@/lib/content";
 import {
+  bookingHref,
   isExternalBookingUrl,
   siteConfig,
 } from "@/lib/site-config";
@@ -50,7 +51,6 @@ export function SiteHeader({ solid = false }: SiteHeaderProps) {
         <Link
           href="/"
           className="flex items-center gap-3 font-semibold tracking-[-0.02em]"
-          aria-label={`${siteConfig.name} — accueil`}
         >
           <span
             className={cn(
@@ -62,6 +62,7 @@ export function SiteHeader({ solid = false }: SiteHeaderProps) {
             S
           </span>
           {siteConfig.name}
+          <span className="sr-only"> — accueil</span>
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Principale">
@@ -78,7 +79,7 @@ export function SiteHeader({ solid = false }: SiteHeaderProps) {
 
         <div className="hidden lg:block">
           <a
-            href={siteConfig.bookingUrl}
+            href={bookingHref}
             target={isExternalBookingUrl ? "_blank" : undefined}
             rel={isExternalBookingUrl ? "noopener noreferrer" : undefined}
             className={cn(
@@ -100,8 +101,8 @@ export function SiteHeader({ solid = false }: SiteHeaderProps) {
                 type="button"
                 variant="ghost"
                 size="icon"
-                className="rounded-none lg:hidden"
-                aria-label="Ouvrir le menu"
+                className="size-11 rounded-none lg:hidden"
+                aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
               />
             }
           >
@@ -142,7 +143,7 @@ export function SiteHeader({ solid = false }: SiteHeaderProps) {
             </nav>
             <div className="p-6">
               <a
-                href={siteConfig.bookingUrl}
+                href={bookingHref}
                 target={isExternalBookingUrl ? "_blank" : undefined}
                 rel={isExternalBookingUrl ? "noopener noreferrer" : undefined}
                 onClick={() => setIsMenuOpen(false)}

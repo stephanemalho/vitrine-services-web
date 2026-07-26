@@ -25,3 +25,7 @@ export const siteConfig = {
 } as const;
 
 export const isExternalBookingUrl = siteConfig.bookingUrl.startsWith("http");
+
+export const bookingHref = siteConfig.bookingUrl.startsWith("#")
+  ? `/${siteConfig.bookingUrl}`
+  : siteConfig.bookingUrl;

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { getPricingOfferPath, pricingOffers } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -16,5 +17,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    ...pricingOffers.map((offer) => ({
+      url: new URL(getPricingOfferPath(offer), siteConfig.siteUrl).toString(),
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
   ];
 }
