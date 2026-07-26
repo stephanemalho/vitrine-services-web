@@ -23,7 +23,7 @@ export function ProjectsSection() {
           <SectionHeading
             eyebrow="02 · Projets"
             title="Des expériences numériques sobres, mémorables et orientées résultat."
-            description="Voici une sélection de projets récents correspondant à des besoins variés, allant de la publication de sites vitrines à la création d'un site multilangue complexe. Un exemple est présenté pour chaque offres de service, allant de l'offre Éssentiel à l'offre Clé en main – les offres sont détaillées dans la section suivante."
+            description="Voici une sélection de projets récents correspondant à des besoins variés, allant de la publication de sites vitrines à la création d’un site multilingue complexe. Un exemple est présenté pour chaque offre de service, de l’offre Essentiel à l’offre Clé en main — les offres sont détaillées dans la section suivante."
             inverted
           />
         </Reveal>
@@ -36,13 +36,12 @@ export function ProjectsSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block h-full bg-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
-                aria-label={`Voir ${project.title} (nouvel onglet)`}
               >
                 <article className="flex h-full flex-col">
                   <div className="relative aspect-4/3 overflow-hidden bg-black">
                     <Image
                       src={project.image}
-                      alt=""
+                      alt={project.imageAlt}
                       fill
                       loading={index === 0 ? "eager" : "lazy"}
                       sizes="(max-width: 1024px) 100vw, 33vw"
@@ -81,6 +80,7 @@ export function ProjectsSection() {
                         </Badge>
                       ))}
                     </div>
+                    <span className="sr-only"> (ouvre un nouvel onglet)</span>
                   </div>
                 </article>
               </a>

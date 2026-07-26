@@ -13,12 +13,12 @@ export function SiteFooter() {
             <Link
               href="/"
               className="text-xl font-semibold tracking-[-0.03em]"
-              aria-label={`${siteConfig.name} — accueil`}
             >
               {siteConfig.name}
+              <span className="sr-only"> — accueil</span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-6 text-white/55">
-              Faites vous construire un site rapide et durable pour transformer votre présence en ligne en véritable levier de croissance.
+              Faites-vous construire un site rapide et durable pour transformer votre présence en ligne en véritable levier de croissance.
             </p>
           </div>
           <nav className="grid content-start gap-3" aria-label="Pied de page">
@@ -55,13 +55,13 @@ export function SiteFooter() {
         </div>
         <div className="mt-14 flex flex-col gap-5 border-t border-white/20 pt-6 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {siteConfig.name}. Tous droits réservés.</p>
-          <a
+          <Link
             href="#top"
             className="flex w-fit items-center gap-2 text-white/70 hover:text-white"
           >
             Retour en haut
             <ArrowUp className="size-3.5" aria-hidden="true" />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

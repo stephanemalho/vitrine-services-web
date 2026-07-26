@@ -6,7 +6,6 @@ import { BookingButton } from "@/components/booking-button";
 export function HeroSection() {
   return (
     <section
-      id="top"
       className="relative min-h-svh overflow-hidden bg-foreground text-background"
     >
       <div
@@ -63,7 +62,7 @@ export function HeroSection() {
                 aria-hidden="true"
               >
                 <span className="font-mono tracking-[0.12em] uppercase">
-                  Design · Code · SEO
+                  Design · Code · SEO · Workflow d’agents IA
                 </span>
                 <span>2026</span>
               </div>

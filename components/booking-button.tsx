@@ -19,11 +19,12 @@ export function BookingButton({
   inverted = false,
   openInNewTab,
 }: BookingButtonProps) {
-  const shouldOpenInNewTab = openInNewTab ?? href.startsWith("http");
+  const resolvedHref = href.startsWith("#") ? `/${href}` : href;
+  const shouldOpenInNewTab = openInNewTab ?? resolvedHref.startsWith("http");
 
   return (
     <a
-      href={href}
+      href={resolvedHref}
       target={shouldOpenInNewTab ? "_blank" : undefined}
       rel={shouldOpenInNewTab ? "noopener noreferrer" : undefined}
       className={cn(
@@ -36,6 +37,9 @@ export function BookingButton({
       )}
     >
       {label}
+      {shouldOpenInNewTab ? (
+        <span className="sr-only"> (ouvre un nouvel onglet)</span>
+      ) : null}
       <ArrowUpRight aria-hidden="true" />
     </a>
   );

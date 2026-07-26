@@ -11,7 +11,7 @@ export function ContactSection() {
       <div className="container-shell py-24 sm:py-32">
         <Reveal className="grid gap-14 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
-            <p className="font-mono text-xs tracking-[0.17em] uppercase opacity-60">
+            <p className="font-mono text-xs tracking-[0.17em] uppercase opacity-80">
               04 · Contact
             </p>
             <h2 className="mt-7 max-w-5xl text-[clamp(3.2rem,7vw,7rem)] leading-[0.9] font-medium tracking-[-0.065em] text-balance">
