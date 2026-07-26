@@ -12,6 +12,9 @@ export const siteConfig = {
     vercelProductionUrl ??
     "http://localhost:3000",
   bookingUrl: process.env.NEXT_PUBLIC_BOOKING_URL ?? "#contact",
+  contactFormUrl:
+    process.env.NEXT_PUBLIC_CONTACT_FORM_URL ??
+    "https://forms.gle/Fec1YxcZdjf6DrsA8",
   contactEmail:
     process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "infos@studio-seo.fr",
   legal: {
