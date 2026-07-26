@@ -23,7 +23,7 @@ export function ProjectsSection() {
           <SectionHeading
             eyebrow="02 · Projets"
             title="Des expériences numériques sobres, mémorables et orientées résultat."
-            description="Une sélection de réalisations pensées pour conjuguer identité, visibilité et efficacité, amenée à s’enrichir au fil des collaborations."
+            description="Voici une sélection de projets récents correspondant à des besoins variés, allant de la publication de sites vitrines à la création d'un site multilangue complexe. Un exemple est présenté pour chaque offres de service, allant de l'offre Éssentiel à l'offre Clé en main – les offres sont détaillées dans la section suivante."
             inverted
           />
         </Reveal>

@@ -18,8 +18,7 @@ export function SiteFooter() {
               {siteConfig.name}
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-6 text-white/55">
-              Des sites utiles, rapides et durables pour transformer votre
-              présence en ligne en véritable levier de croissance.
+              Faites vous construire un rapide et durable pour transformer votre présence en ligne en véritable levier de croissance.
             </p>
           </div>
           <nav className="grid content-start gap-3" aria-label="Pied de page">
