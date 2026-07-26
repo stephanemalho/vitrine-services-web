@@ -16,7 +16,7 @@ export function ProjectsSection() {
   return (
     <section
       id="projets"
-      className="scroll-mt-20 bg-foreground py-24 text-background sm:py-32"
+      className="scroll-mt-20 overflow-x-clip bg-foreground py-24 text-background sm:py-32"
     >
       <div className="container-shell">
         <Reveal>
@@ -28,7 +28,7 @@ export function ProjectsSection() {
           />
         </Reveal>
 
-        <div className="mt-16 grid gap-px bg-white/20 lg:grid-cols-3">
+        <div className="mt-16 grid min-w-0 grid-cols-1 gap-px bg-white/20 lg:grid-cols-3">
           {projects.map((project, index) => (
             <Reveal key={project.title} delay={index * 0.08}>
               <a
