@@ -72,7 +72,9 @@ export function PricingSection() {
                   </ul>
                   <BookingButton
                     label={offer.cta}
+                    href={offer.href}
                     inverted={offer.featured}
+                    openInNewTab
                     className={cn(
                       "mt-10 w-full",
                       !offer.featured &&

@@ -110,7 +110,7 @@ export default function LegalNoticePage() {
                 Les textes, éléments graphiques, photographies et composants du
                 site sont protégés par le droit de la propriété intellectuelle.
                 Toute reproduction ou adaptation nécessite l’autorisation
-                préalable de leur titulaire.
+                préalable de Studio S.
               </p>
             </section>
 
@@ -120,9 +120,8 @@ export default function LegalNoticePage() {
               </h2>
               <p className="mt-7 text-sm leading-6 text-muted-foreground">
                 Le site n’intègre aucun formulaire ni outil de mesure d’audience
-                par défaut. Une prise de rendez-vous peut rediriger vers Google
-                Forms, soumis à sa propre politique de confidentialité. Toute
-                future collecte devra être documentée avant activation.
+                par défaut autre que Google Search Console. Une prise de rendez-vous peut rediriger vers Google
+                Forms, soumis à sa propre politique de confidentialité.
               </p>
             </section>
           </div>

@@ -84,6 +84,7 @@ export const pricingOffers = [
       "Mise en ligne et hébergement inclus",
     ],
     cta: "Choisir l’Essentiel",
+    href: "https://forms.gle/WHpTANajJkeHoEBn8",
     featured: false,
   },
   {
@@ -98,6 +99,7 @@ export const pricingOffers = [
       "Maintenance mensuelle en option",
     ],
     cta: "Demander un devis",
+    href: "https://forms.gle/hUgSHMTEWC4CRMeR8",
     featured: true,
   },
   {
@@ -115,6 +117,7 @@ export const pricingOffers = [
       "Maintenance offerte pendant 6 mois",
     ],
     cta: "Opter pour le Clé en main",
+    href: "https://forms.gle/5UNnbaRyky5ptK2X6",
     featured: false,
   },
 ] as const;

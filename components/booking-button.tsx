@@ -1,25 +1,31 @@
 import { ArrowUpRight } from "lucide-react";
 
 import { buttonVariants } from "@/components/ui/button";
-import { isExternalBookingUrl, siteConfig } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
 type BookingButtonProps = {
   label?: string;
   className?: string;
+  href?: string;
   inverted?: boolean;
+  openInNewTab?: boolean;
 };
 
 export function BookingButton({
   label = "Écrire à Studio S.",
   className,
+  href = siteConfig.bookingUrl,
   inverted = false,
+  openInNewTab,
 }: BookingButtonProps) {
+  const shouldOpenInNewTab = openInNewTab ?? href.startsWith("http");
+
   return (
     <a
-      href={siteConfig.bookingUrl}
-      target={isExternalBookingUrl ? "_blank" : undefined}
-      rel={isExternalBookingUrl ? "noopener noreferrer" : undefined}
+      href={href}
+      target={shouldOpenInNewTab ? "_blank" : undefined}
+      rel={shouldOpenInNewTab ? "noopener noreferrer" : undefined}
       className={cn(
         buttonVariants({ size: "lg" }),
         "h-12 rounded-none px-5 text-sm font-semibold",

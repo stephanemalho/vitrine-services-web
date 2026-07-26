@@ -24,6 +24,12 @@ describe("site content", () => {
     expect(pricingOffers.filter((offer) => offer.featured)).toHaveLength(1);
   });
 
+  it("links every pricing offer to a secure Google Form", () => {
+    expect(
+      pricingOffers.every((offer) => offer.href.startsWith("https://forms.gle/")),
+    ).toBe(true);
+  });
+
   it("keeps project links secure and project images local", () => {
     expect(projects.every((project) => project.href.startsWith("https://"))).toBe(
       true,

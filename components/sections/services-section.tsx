@@ -90,7 +90,7 @@ export function ServicesSection() {
         <Reveal>
           <SectionHeading
             eyebrow="01 · Services"
-            title="Des expertises réunies pour faire de votre site un outil de croissance."
+            title="Faire de votre site un outil de croissance."
             description="Studio S. vous propose un accompagnement de bout en bout, grantissant un interlocuteur unique et des choix techniques expliqués simplement. Chaque projet est pensé pour être évolutif, sécurisé et optimisé pour le référencement naturel."
           />
         </Reveal>
