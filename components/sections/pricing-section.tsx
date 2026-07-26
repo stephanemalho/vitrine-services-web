@@ -16,7 +16,7 @@ export function PricingSection() {
           <SectionHeading
             eyebrow="03 · Tarifs"
             title="Des offres lisibles, sans surprise et adaptées à votre ambition."
-            description="Chaque projet commence par un échange gratuit pour cadrer vos objectifs, votre calendrier et définir le niveau d’accompagnement qui convient le mieux en fonction de votre secteur activité et de votre stratégie digitale."
+            description="Chaque projet commence par un échange gratuit pour cadrer vos objectifs, votre calendrier et définir le niveau d’accompagnement qui convient le mieux en fonction de votre secteur d’activité et de votre stratégie digitale."
           />
         </Reveal>
 
