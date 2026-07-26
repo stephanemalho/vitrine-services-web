@@ -9,7 +9,7 @@ type RevealProps = {
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
   return (
     <div
-      className={cn("content-reveal", className)}
+      className={cn("content-reveal min-w-0 w-full max-w-full", className)}
       style={{ animationDelay: `${delay}s` }}
     >
       {children}
